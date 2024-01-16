@@ -1,0 +1,17 @@
+kind: pipeline
+type: docker
+name: chatgpt-next-web
+
+steps:
+  - name: deploy
+    image: docker
+    commands:
+      - docker-compose up -d
+    volumes:
+      - name: docker_socket
+        path: /var/run/docker.sock
+
+volumes:
+  - name: docker_socket
+    host:
+      path: /var/run/docker.sock

@@ -4,13 +4,15 @@ services:
     container_name: chatgpt-next-web
     build: .
     ports:
-      - 3001:3000
+      - "3001:3000"
     environment:
       OPENAI_API_KEY : sb-c4550cf022d0b0a16c31e5203128bba3cf5363df2867e035
       BASE_URL: https://api.openai-sb.com
       OPENAI_BASE_URL: https://api.openai-sb.com
-      CODE: 18600202009
+      CODE: https://api.openai-sb.com
       HIDE_USER_API_KEY: 1
       DISABLE_GPT4: 1
       DISABLE_FAST_LINK: 1
       CUSTOM_MODELS: -all,+gpt-3.5-turbo-1106
+    network_mode: bridge
+    restart: always
