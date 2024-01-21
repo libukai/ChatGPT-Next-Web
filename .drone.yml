@@ -6,7 +6,7 @@ trigger:
   event:
     - tag
   ref:
-    - refs/tags/release/*
+    - refs/tags/publish/*
 
 steps:
   - name: deploy
