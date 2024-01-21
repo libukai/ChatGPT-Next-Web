@@ -2,12 +2,6 @@ kind: pipeline
 type: docker
 name: chatgpt-next-web
 
-trigger:
-  event:
-    - tag
-  ref:
-    - refs/tags/release/*
-
 steps:
   - name: deploy
     image: docker
