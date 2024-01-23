@@ -9,7 +9,7 @@ services:
       OPENAI_API_KEY : sb-c4550cf022d0b0a16c31e5203128bba3cf5363df2867e035
       BASE_URL: https://api.openai-sb.com
       OPENAI_BASE_URL: https://api.openai-sb.com
-      CODE: https://api.openai-sb.com
+      CODE: aikebanglk,aikenbangcwj
       HIDE_USER_API_KEY: 1
       DISABLE_GPT4: 1
       DISABLE_FAST_LINK: 1
